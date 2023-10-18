@@ -1,8 +1,9 @@
 <?php
 include 'classes/user/User.php';
 include 'classes/user/UserDAO.php';
+include 'interface/Test.php';
 
-class UserTest
+class UserTest implements iTest
 {
     private User $user;
     private UserDAO $userDAO;

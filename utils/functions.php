@@ -17,3 +17,8 @@ function saveImage($file)
     move_uploaded_file($imgTmp, $_SERVER['DOCUMENT_ROOT'] . getProjectFolder() . '/images/' . $filename);
     return $filename;
 }
+
+function formatTags($tags)
+{
+    return ucwords(str_replace(',', ', ', $tags));
+}

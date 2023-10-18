@@ -66,8 +66,8 @@ include 'classes/user/UserDAO.php';
                         <td><?php echo $user['email']; ?></td>
                         <td>
                             <div class="d-flex justify-content-end gap-2" role="group">
-                                <a href="<?php echo ROOT . '/edit.php?id=' . $user['user_id']; ?>" class="btn btn-primary">Modificar</a>
-                                <a href="<?php echo ROOT . '/index.php?id=' . $user['user_id']; ?>" class="btn btn-danger">Eliminar</a>
+                                <a href="<?php echo ROOT . 'user-edit.php?id=' . $user['user_id']; ?>" class="btn btn-primary">Modificar</a>
+                                <a href="<?php echo ROOT . 'user-index.php?id=' . $user['user_id']; ?>" class="btn btn-danger">Eliminar</a>
                             </div>
                         </td>
                     </tr>
@@ -77,6 +77,9 @@ include 'classes/user/UserDAO.php';
             </tbody>
         </table>
     </div>
+    <?php
+    include 'components/footer.php';
+    ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

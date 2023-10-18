@@ -10,7 +10,10 @@
                     <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="add.php">Crear usuario</a>
+                    <a class="nav-link" href="user-add.php">Crear usuario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.php">Administración</a>
                 </li>
             </ul>
         </div>
